@@ -243,6 +243,9 @@ ul{
     .cols-md-2{
         grid-template-columns: repeat(2, minmax(0,1fr));   
     }
+    .justify-initial{
+        justify-content: initial!important;
+    }
 }
 /* for large screen lg(1024px)  */
 @media (min-width:1024px) {
@@ -254,6 +257,8 @@ ul{
         }
         #nav{
             flex-direction: row!important;
+            padding-left: 6rem!important;
+            padding-right: 6rem!important;
         }
         #nav .collapse{
             max-height: initial!important;
@@ -269,9 +274,6 @@ ul{
         }
         .lg-cols-4{
             grid-template-columns: repeat(4, minmax(0,1fr));
-        }
-        .justify-initial{
-            justify-content: initial!important;
         }
 }
 /* for large screen xl(1280px)  */
@@ -442,7 +444,7 @@ ul{
     padding-bottom: 0;
 }
 #footer .grid{
-    column-gap: 6em;
+    column-gap: 2em;
     padding:3em 0;
     border-bottom: 2px solid var(--text-light);
 }
