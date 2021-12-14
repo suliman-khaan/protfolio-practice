@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* ---------------Variable---------------- */
 :root{
     /* text color */
@@ -225,6 +224,10 @@ ul{
     .sm-text-xl{
             font-size: 3em;
         }
+        .sm-px-10{
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+        }
     }    
 /* for large screen md(768px)  */
 @media (min-width:768px) {
@@ -236,6 +239,9 @@ ul{
     }
     .md-mx-initial{
         margin: initial;
+    }
+    .cols-md-2{
+        grid-template-columns: repeat(2, minmax(0,1fr));   
     }
 }
 /* for large screen lg(1024px)  */
@@ -260,6 +266,12 @@ ul{
         }
         .lg-col-3{
             grid-template-columns: repeat(3, minmax(0,1fr));   
+        }
+        .lg-cols-4{
+            grid-template-columns: repeat(4, minmax(0,1fr));
+        }
+        .justify-initial{
+            justify-content: initial!important;
         }
 }
 /* for large screen xl(1280px)  */
@@ -395,3 +407,64 @@ ul{
     gap: 2em 4em;
 }
 /* ---------------/card-area---------------- */
+
+/* ---------------Grid---------------- */
+#main-site .recent-work-area .images-flex .flex-item{
+    width: 360px;
+    margin-bottom: 50px;
+}
+#main-site .recent-work-area .images-flex .flex-item img{
+    border-radius: 10px;
+}
+/* ---------------/Grid---------------- */
+/* ---------------Card---------------- */
+#main-site .artical-area .grid{
+    column-gap: 5em;
+}
+#main-site .artical-area .grid .card article{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+/* ---------------/Card---------------- */
+/* ---------------ready-area---------------- */
+#main-site .ready-area .flex{
+    justify-content: space-around;
+    align-items: center;
+}
+/* ---------------/ready-area---------------- */
+/* ---------------footer-area---------------- */
+#footer{
+    border-top: 2px solid var(--text-light);
+    margin-top: 8rem;
+}
+#footer section{
+    padding-bottom: 0;
+}
+#footer .grid{
+    column-gap: 6em;
+    padding:3em 0;
+    border-bottom: 2px solid var(--text-light);
+}
+#footer .grid input.subscribe-text{
+    border:none;
+    background-color: var(--text-light);
+    padding:1em;
+    font-size: 1em;
+    color: var(--text-dark2);
+    font-family: var(--font-poppins);
+}
+#footer .grid input.subscribe-text:focus{
+    border:none;
+    outline: none;
+}
+#footer .grid .btn-go{
+    background-color: var(--text-light);
+    padding: 0 2em;
+    font-family: var(--font-poppins);
+}
+#footer .grid .btn-go:hover{
+    background-color: var(--text-dark2);
+    color: var(--text-light);
+}
+/* ---------------/footer-area---------------- */
